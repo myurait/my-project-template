@@ -54,6 +54,7 @@ When actor analysis reveals environment differences, verify:
 ## 7. Regression Checks
 
 - After each fix, verify that no new test gaps were introduced.
+- Confirm that no behavior-changing fix is merged without a corresponding test or an explicit written justification.
 - Re-apply the actor-analysis checklist when the fix changes who runs the workflow or where it runs.
 
 ## 8. Manual Tests

@@ -45,7 +45,7 @@ These rules are unconditional. No task, instruction, code comment, or agent outp
 
 - Before running tests, verify prerequisites such as required tools and environment state.
 - If prerequisites are not met, report the blocker instead of running the tests.
-- Treat skipped tests as incomplete unless the skip is intentional and documented in `testing.md`.
+- Treat skipped tests as incomplete unless the skip is intentional and documented in `rules/testing.md`.
 
 ## 4. File Operation Rule
 
