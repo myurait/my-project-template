@@ -1,3 +1,5 @@
+English | [日本語](README.ja.md)
+
 # Project Name
 
 One short paragraph explaining what this project does and who it is for.

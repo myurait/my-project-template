@@ -1,6 +1,6 @@
-# Project Template
+English | [日本語](README.ja.md)
 
-Japanese version: `README.ja.md`
+# Project Template
 
 This repository bootstraps a new project and its private development-docs repository.
 Before real project work begins, choose exactly one governance level and run the initialization procedure.
