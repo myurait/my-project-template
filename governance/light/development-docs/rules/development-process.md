@@ -24,6 +24,8 @@
 - Focus on code quality, not personal preference.
 - Explain the reasoning behind suggestions.
 - Approve only when all concerns are addressed.
+- After findings are produced, record the implementation response plan before fixes begin.
+- Follow-up review must explicitly reference the implementation response plan items it verifies.
 
 ## 2. Tech Lead Review
 
@@ -132,7 +134,11 @@ Step 10: Update the roadmap
 - Update the roadmap with completed items and new discoveries.
 
 **Step 4 — Write a development log entry**
-- Record what was done, why, and how in `development-log/`.
+- Record what was done, why, and how in `development-logs/`.
+- Keep the active file name as `log_{YYYYMMDDhhmmss}.md`, where the timestamp is the file creation time.
+- Every log entry must record `Date` as the exact execution timestamp with timezone and `Author` explicitly.
+- Keep at most 20 entries in one active log file.
+- If the next append would exceed 20 entries, move the current file to `development-logs/archives/` and create a new active file in `development-logs/`.
 
 **Step 5 — Run review**
 - Review criteria: security, robustness, design, test quality.

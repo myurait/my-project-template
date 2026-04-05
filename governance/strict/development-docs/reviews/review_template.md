@@ -1,9 +1,13 @@
 # Review
 
+Use flat bullets and headings. Do not use Markdown tables in review evidence.
+
 - Date:
-- Scope:
 - Reviewer:
-- Review Type: code review | tech lead review | security review | design review
+- Base Commit:
+- Scope:
+- Review Type: code review | tech lead review | security review | design review | document review
+- Trigger:
 - Criteria:
 
 ---
@@ -26,26 +30,62 @@
 
 - None
 
-## Tech Lead Review Dimensions
+## Review Dimensions
 
-### Debt Prevention
+Fill only the dimensions that match the review type and criteria above.
 
-- Notes:
+### Tech Lead Review
 
-### Decomposition and Boundaries
-
-- Notes:
-
-### Alignment With Declared Design
+#### Debt Prevention
 
 - Notes:
 
-### Senior-Engineer Smell Detection
+#### Decomposition and Boundaries
 
 - Notes:
 
-## Follow-Up Review
+#### Alignment With Declared Design
+
+- Notes:
+
+#### Senior-Engineer Smell Detection
+
+- Notes:
+
+### Document Review
+
+- Notes:
+
+### Security Review
+
+- Notes:
+
+### Design Review
+
+- Notes:
+
+### Code Review
+
+- Notes:
+
+## Implementation Response Plan
 
 - Date:
+- Reviewer:
+- Base Commit:
+- Plan Summary:
+- Planned Fixes:
+- Deferred Items:
+
+## Follow-Up Review History
+
+### Entry 1
+
+- Date:
+- Reviewer:
+- Base Commit:
+- Review Type:
+- References:
 - Result:
 - Notes:
+- Remaining Risks:

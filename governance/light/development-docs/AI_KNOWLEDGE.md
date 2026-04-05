@@ -14,7 +14,8 @@
 
 - Treat this repository as the canonical source for development-facing documentation.
 - Keep process overhead low unless the change is risky.
-- Record detailed chronology in `development-log/`.
+- Record detailed chronology in `development-logs/`.
+- Keep the active development log in `development-logs/` and archive closed log files under `development-logs/archives/`.
 - Extract reusable lessons into `knowledge.md`.
 - Record temporary compromises in `design/03-tech-debt-registry.md`.
 - After every review, output a concise review summary to the user.

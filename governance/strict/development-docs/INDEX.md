@@ -26,7 +26,9 @@ This repository contains development-facing project documentation.
 ├── design/
 ├── roadmap/
 ├── reviews/
-├── development-log/
+│   └── archives/
+├── development-logs/
+│   └── archives/
 └── reference/
 ```
 
@@ -48,7 +50,7 @@ Project Charter (01)
   ├── Decisions (ADR)
   │
   └── Knowledge
-        └── Development Log (detailed chronology)
+        └── Development Logs (detailed chronology)
 ```
 
 ## First Use
@@ -57,5 +59,5 @@ Project Charter (01)
 2. As the first action after directory setup, define the development language, documentation language, and commit message language in `design/01-project-charter.md`.
 3. Fill `roadmap/01-initial-roadmap.md`.
 4. Replace README placeholders with project-specific content.
-5. Start the first development log from `development-log/log_template.md`.
-6. Use the review template in `reviews/` for meaningful changes.
+5. Start the first active development log from `development-logs/log_template.md` and name it `log_{YYYYMMDDhhmmss}.md`.
+6. Use the review template in `reviews/` for meaningful changes, keep each review thread in a single evidence file, and archive older review files under `reviews/archives/`.

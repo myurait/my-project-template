@@ -4,7 +4,19 @@
 
 - Review for correctness, regression risk, missing tests, hidden coupling, and long-term maintainability.
 - Persist review evidence for all meaningful changes.
-- Record severity, affected files, decision rationale, and follow-up result.
+- Use one review evidence file per review thread.
+- Record the initial review, implementation response plan, and all follow-up reviews in that same file.
+- Do not create separate follow-up files for the same review thread.
+- Name review evidence files as `review_{YYYYMMDDhhmmss}_{scope_description}.md`.
+- Keep `scope_description` concise, ASCII, and kebab-case.
+- Keep only the newest 5 review evidence files in `reviews/`. Move older files to `reviews/archives/`.
+- `reviews/README.md`, `reviews/review_template.md`, and `reviews/archives/` are not counted as review evidence files.
+- Record severity, affected files, decision rationale, implementation response plan, and follow-up result.
+- Record `Date` as the exact execution timestamp with timezone.
+- Record `Reviewer` explicitly. When the reviewer is AI, write the model name in the publicly disclosable form.
+- Record `Base Commit` for every initial review and every follow-up review entry.
+- `Review Type` must match the actual review lens and criteria used.
+- Do not use Markdown tables in review evidence. Use headings and flat bullet lists instead.
 - Treat missing re-review as incomplete work.
 - When a temporary workaround is accepted, add it to `design/03-tech-debt-registry.md`.
 
@@ -24,6 +36,8 @@
 - Focus on code quality, not personal preference.
 - Explain the reasoning behind suggestions.
 - Approve only when all concerns are addressed.
+- After findings are produced, record the implementation response plan before fixes begin.
+- Follow-up review must explicitly reference the implementation response plan items it verifies.
 
 ## 2. Tech Lead Review
 
@@ -69,7 +83,7 @@ behavior changes with high blast radius, and any work that can create long-term 
 - Tech lead review findings must be written to `reviews/`.
 - Findings must include severity and file:line references when applicable.
 - Fixes must receive follow-up review with the same review lens, not only a quick re-check.
-- Append fix results to the same review file.
+- Append the implementation response plan and all fix results to the same review file.
 
 ## 3. Post-Fix Re-Review
 
@@ -94,7 +108,8 @@ If the original was a code review, the same checklist is re-applied.
 
 ### Evidence
 
-- Append re-review results to the original review file as a "Post-Fix Re-Review" section.
+- Append re-review results to the original review file as a follow-up review entry.
+- Every follow-up review entry must include `Date`, `Reviewer`, `Base Commit`, `Review Type`, referenced plan items, result, and remaining risks.
 - Reject inadequate fixes and request re-work.
 - After re-work, apply this section again. Repeat until all findings are resolved.
 
@@ -147,15 +162,21 @@ Step 10: Update the roadmap
 - Update the roadmap with completed items and new discoveries.
 
 **Step 4 — Write a development log entry**
-- Record what was done, why, and how in `development-log/`.
+- Record what was done, why, and how in `development-logs/`.
+- Keep the active file name as `log_{YYYYMMDDhhmmss}.md`, where the timestamp is the file creation time.
+- Every log entry must record `Date` as the exact execution timestamp with timezone and `Author` explicitly.
+- Keep at most 20 entries in one active log file.
+- If the next append would exceed 20 entries, move the current file to `development-logs/archives/` and create a new active file in `development-logs/`.
 
 **Step 5 — Run review**
 - Review criteria: security (injection, path manipulation, permissions), robustness (error handling, edge cases, cross-platform), design (future extensibility, debt accumulation), test quality (coverage, flakiness, environment dependency).
+- Open or create one review thread file and record the initial review metadata there.
 
 **Step 6 — Fix review findings**
 - Critical and High findings must be fixed.
 - Medium findings: fix or record as future work with justification.
 - Low and design-only findings: recording is sufficient.
+- Before changing code or documents, append the implementation response plan to the active review thread file.
 
 **Step 7 — Re-check tests and docs**
 - Re-check tests according to `rules/testing.md`, including regression gaps and actor-analysis expectations.
@@ -164,6 +185,7 @@ Step 10: Update the roadmap
 - Verify that fixes did not introduce new problems.
 - Confirm final linter and test suite pass.
 - Explicitly acknowledge remaining risks.
+- Append the follow-up review to the same review thread file instead of creating a sibling file.
 
 **Step 9 — Commit**
 - Stage files explicitly by name. Do not use `git add -A`.
