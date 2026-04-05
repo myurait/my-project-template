@@ -108,8 +108,8 @@ Document public APIs and complex functions with:
 ## 12. Review Rules
 
 - Review for correctness, regression risk, missing tests, hidden coupling, and long-term maintainability.
-- Persist review evidence for high-risk or architecture-affecting changes.
-- Record severity, affected files, decision rationale, and follow-up result.
+- Do not persist review evidence files in light governance.
+- After every review, output a concise review summary to the user.
 - Treat missing re-review as incomplete work.
 - When a temporary workaround is accepted, add it to `design/03-tech-debt-registry.md`.
 
@@ -136,7 +136,7 @@ Tech lead review is triggered when a review is explicitly labeled as such.
 It emphasizes a senior engineer's intuition and "code smell" detection at a high level of abstraction.
 It applies project-wide and is not limited to a specific phase or scope.
 
-Review evidence recording in `reviews/` is not required for light governance, but the review perspectives below must still be applied.
+In light governance, do not create review evidence files. Apply the review perspectives below and report the result to the user.
 
 ### 13.1 Debt Prevention
 
@@ -196,14 +196,8 @@ The re-review inherits the full scope and lens of the original review.
 
 ## 16. Testing Rules
 
-- Add tests for important paths, edge cases, and failure behavior.
-- Aim for meaningful coverage rather than high percentages.
-- Keep tests focused and isolated.
-- Design tests from real user workflows, not only implementation details.
-- Verify environment differences when behavior depends on shells, containers, background workers, or external services.
-- Record why a manual test still exists and what would be needed to automate it.
-- Test names should be written in English. When the declared development language is not English, provide a parallel description in the development language.
-- Test name format: "should [expected behavior] when [condition]".
+- `testing.md` is the canonical testing policy for this repository.
+- All test scope, coverage, design, isolation, naming, execution, and manual-test rules in `testing.md` must be followed.
 
 ## 17. Development Flow
 
@@ -222,7 +216,7 @@ Step 10: Update the roadmap
 ```
 
 - Every step is mandatory.
-- Missing documentation, review evidence, or roadmap updates means the task is not complete.
+- Missing documentation or roadmap updates means the task is not complete.
 
 ### Step Details
 
@@ -236,10 +230,7 @@ Step 10: Update the roadmap
 - Pass the linter.
 
 **Step 2 — Add or update tests**
-- New code must have tests.
-- Confirm all tests pass.
-- Treat SKIP as FAIL. Only intentional, documented skips are acceptable.
-- Apply the actor analysis: identify who runs the code and where, and verify every actor's environment.
+- Follow `testing.md` for required test scope, execution rules, and actor analysis.
 
 **Step 3 — Update public documents**
 - Update design documents if the implementation diverges from them.
@@ -257,8 +248,7 @@ Step 10: Update the roadmap
 - Low and design-only findings: recording is sufficient.
 
 **Step 7 — Re-check tests and docs**
-- Verify that fixes did not introduce new test gaps.
-- Re-apply the actor analysis checklist.
+- Re-check tests according to `testing.md`, including regression gaps and actor-analysis expectations.
 
 **Step 8 — Run follow-up review**
 - Verify that fixes did not introduce new problems.

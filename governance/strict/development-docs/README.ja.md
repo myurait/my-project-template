@@ -5,7 +5,7 @@
 
 ## 最初に読むもの
 
-1. `AI_KNOWLEDGE.md`
-2. `INDEX.md`
-3. `roadmap/` 配下のアクティブなロードマップ
-
+1. `AI_RUNTIME_RULES.md`
+2. `AI_KNOWLEDGE.md`
+3. `INDEX.md`
+4. `roadmap/` 配下のアクティブなロードマップ

@@ -31,7 +31,19 @@ When actor analysis reveals environment differences, verify:
 - File permission and path resolution differences.
 - Network access differences.
 
-## 4. Test Isolation
+## 4. Test Naming
+
+- Test names should be written in English.
+- When the declared development language is not English, provide a parallel description in the development language.
+- Test name format: `should [expected behavior] when [condition]`.
+
+## 5. Test Execution
+
+- New code must have tests.
+- Confirm all tests pass before considering the work complete.
+- Treat skipped tests as incomplete unless the skip is intentional and documented.
+
+## 6. Test Isolation
 
 - Use dependency injection to isolate tests from the file system and external services.
 - When tests must be skipped, use categorized tags:
@@ -39,7 +51,13 @@ When actor analysis reveals environment differences, verify:
   - `skip('manual: ...')` — requires real environment or long wait.
   - `skip('future: ...')` — feature not yet implemented.
 
-## 5. Manual Tests
+## 7. Regression Checks
+
+- After each fix, verify that no new test gaps were introduced.
+- Confirm that no behavior-changing fix is merged without a corresponding test or an explicit written justification.
+- Re-apply the actor-analysis checklist when the fix changes who runs the workflow or where it runs.
+
+## 8. Manual Tests
 
 - Store stable manual scenarios under `reference/` or dedicated scenario files.
 - Record why the scenario is still manual.

@@ -23,6 +23,6 @@
 
 ## 開発文書
 
-- `development-docs/AI_KNOWLEDGE.md`: AI の入口
+- `development-docs/AI_RUNTIME_RULES.md`: AI の実行時安全ルール
+- `development-docs/AI_KNOWLEDGE.md`: AI ナレッジの入口
 - `development-docs/INDEX.md`: 開発文書の入口
-

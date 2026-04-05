@@ -29,7 +29,8 @@ Detailed chronology belongs in `development-log/`.
 ## 3. Review Discipline
 
 - A passing test suite does not prove the real user workflow is correct.
-- Risky changes should leave durable review evidence.
+- Do not store review evidence files in light governance.
+- After review, output a concise summary to the user.
 - Code review alone cannot detect user-experience problems. Explicitly incorporate end-user perspective testing into the process.
 
 ## 4. Architecture Lessons
@@ -43,4 +44,3 @@ Detailed chronology belongs in `development-log/`.
 - Prevent injection in structured data (YAML, JSON, SQL) by using safe serialization functions, not string interpolation.
 - Prevent command injection by validating external input against a whitelist before passing it to shell commands.
 - Never use pipe-to-shell patterns (`curl | bash`) in project scripts. Show the commands and let the user run them manually.
-

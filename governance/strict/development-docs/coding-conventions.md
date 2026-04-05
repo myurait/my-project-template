@@ -212,14 +212,8 @@ If the original was a code review, the same checklist is re-applied.
 
 ## 16. Testing Rules
 
-- Add tests for important paths, edge cases, and failure behavior.
-- Design tests from real user workflows, not only implementation details.
-- Verify environment differences when behavior depends on shells, containers, background workers, or external services.
-- Record why a manual test still exists and what would be needed to automate it.
-- Aim for meaningful coverage rather than high percentages.
-- Keep tests focused and isolated.
-- Test names should be written in English. When the declared development language is not English, provide a parallel description in the development language.
-- Test name format: "should [expected behavior] when [condition]".
+- `testing.md` is the canonical testing policy for this repository.
+- All test scope, coverage, design, isolation, naming, execution, and manual-test rules in `testing.md` must be followed.
 
 ## 17. Development Flow
 
@@ -252,10 +246,7 @@ Step 10: Update the roadmap
 - Pass the linter.
 
 **Step 2 — Add or update tests**
-- New code must have tests.
-- Confirm all tests pass.
-- Treat SKIP as FAIL. Only intentional, documented skips are acceptable.
-- Apply the actor analysis: identify who runs the code and where, and verify every actor's environment.
+- Follow `testing.md` for required test scope, execution rules, and actor analysis.
 
 **Step 3 — Update public documents**
 - Update design documents if the implementation diverges from them.
@@ -273,9 +264,7 @@ Step 10: Update the roadmap
 - Low and design-only findings: recording is sufficient.
 
 **Step 7 — Re-check tests and docs**
-- Verify that fixes did not introduce new test gaps.
-- Confirm that no fix was merged without a corresponding test.
-- Re-apply the actor analysis checklist.
+- Re-check tests according to `testing.md`, including regression gaps and actor-analysis expectations.
 
 **Step 8 — Run follow-up review**
 - Verify that fixes did not introduce new problems.

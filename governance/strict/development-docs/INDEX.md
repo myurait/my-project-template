@@ -5,18 +5,20 @@ This repository contains development-facing project documentation.
 ## Reading Order
 
 1. `AI_KNOWLEDGE.md`
-2. `coding-conventions.md`
-3. `knowledge.md`
-4. `roadmap/01-initial-roadmap.md`
-5. `design/01-project-charter.md`
-6. `design/02-architecture.md`
-7. `decisions.md`
+2. `AI_RUNTIME_RULES.md`
+3. `coding-conventions.md`
+4. `knowledge.md`
+5. `roadmap/01-initial-roadmap.md`
+6. `design/01-project-charter.md`
+7. `design/02-architecture.md`
+8. `decisions.md`
 
 ## Directory Map
 
 ```text
 .
 ├── AI_KNOWLEDGE.md
+├── AI_RUNTIME_RULES.md
 ├── INDEX.md
 ├── coding-conventions.md
 ├── decisions.md
