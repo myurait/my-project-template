@@ -3,10 +3,16 @@
 - Date:
 - Scope:
 - Reviewer:
+- Review Type: code review | tech lead review | security review | design review
+- Criteria:
 
 ---
 
 ## Findings
+
+### Critical
+
+- None
 
 ### High
 
@@ -20,8 +26,26 @@
 
 - None
 
-## Follow-Up
+## Tech Lead Review Dimensions
 
-- Needed:
+### Debt Prevention
+
 - Notes:
 
+### Decomposition and Boundaries
+
+- Notes:
+
+### Alignment With Declared Design
+
+- Notes:
+
+### Senior-Engineer Smell Detection
+
+- Notes:
+
+## Follow-Up Review
+
+- Date:
+- Result:
+- Notes:

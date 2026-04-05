@@ -29,6 +29,25 @@ This repository contains development-facing project documentation.
 └── reference/
 ```
 
+## Document Relationships
+
+```text
+Project Charter (01)
+  ├── Architecture (02) ── overview only, details in dedicated docs
+  │
+  ├── Coding Conventions
+  │     ├── Testing Strategy
+  │     └── Development Flow (Step 0–10)
+  │
+  ├── Roadmap
+  │     └── Tech Debt Registry (03)
+  │
+  ├── Decisions (ADR)
+  │
+  └── Knowledge
+        └── Development Log (detailed chronology)
+```
+
 ## First Use
 
 1. Rewrite `design/01-project-charter.md`.
@@ -36,3 +55,4 @@ This repository contains development-facing project documentation.
 3. Fill `roadmap/01-initial-roadmap.md`.
 4. Replace README placeholders with project-specific content.
 5. Start the first development log from `development-log/log_template.md`.
+6. Use the review template in `reviews/` for meaningful changes.

@@ -1,6 +1,6 @@
 # Architecture Decision Log
 
-Record only decisions that are expensive to reverse.
+Record all non-trivial architecture, policy, and operational decisions.
 
 ---
 
