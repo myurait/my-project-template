@@ -2,12 +2,13 @@
 
 ## Start Here
 
-1. `AI_RUNTIME_RULES.md`
+1. `rules/AI_RUNTIME_RULES.md`
 2. `INDEX.md`
-3. `coding-conventions.md`
-4. `knowledge.md`
-5. The active roadmap file under `roadmap/`
-6. `README.md`
+3. `rules/coding-conventions.md`
+4. `rules/development-process.md`
+5. `knowledge.md`
+6. The active roadmap file under `roadmap/`
+7. `README.md`
 
 ## Working Rules
 
