@@ -28,4 +28,3 @@ Add the commands used during normal development.
 - `development-docs/rules/AI_RUNTIME_RULES.md`: AI runtime safety rules
 - `development-docs/AI_KNOWLEDGE.md`: AI knowledge entry point
 - `development-docs/INDEX.md`: development documentation index
-- `development-docs/roadmap/01-initial-roadmap.md`: current roadmap and phase status

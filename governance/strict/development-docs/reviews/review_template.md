@@ -9,6 +9,9 @@ Use flat bullets and headings. Do not use Markdown tables in review evidence.
 - Review Type: code review | tech lead review | security review | design review | document review
 - Trigger:
 - Criteria:
+  - Was the chosen approach justified against simpler alternatives?
+  - Did the change add unnecessary complexity or layers?
+  - Can the user understand why this change exists and what it enables?
 
 ---
 
@@ -40,6 +43,10 @@ Fill only the dimensions that match the review type and criteria above.
 
 - Notes:
 
+#### Complexity Versus Value
+
+- Notes:
+
 #### Decomposition and Boundaries
 
 - Notes:
@@ -49,6 +56,10 @@ Fill only the dimensions that match the review type and criteria above.
 - Notes:
 
 #### Senior-Engineer Smell Detection
+
+- Notes:
+
+#### Explanation Responsibility
 
 - Notes:
 
@@ -63,6 +74,10 @@ Fill only the dimensions that match the review type and criteria above.
 ### Design Review
 
 - Notes:
+- Simpler alternative considered:
+- Traceability from user problem to planning document:
+- Intended experience change:
+- Validation completeness:
 
 ### Code Review
 
@@ -89,3 +104,8 @@ Fill only the dimensions that match the review type and criteria above.
 - Result:
 - Notes:
 - Remaining Risks:
+- Risk Handling:
+  - accepted residual risk with monitoring or next-review trigger
+  - deferred planned work with tracked destination document or phase
+  - explicit user decision required
+  - unresolved finding requiring another fix-and-review cycle

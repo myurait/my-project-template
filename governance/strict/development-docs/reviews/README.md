@@ -14,6 +14,7 @@ Store meaningful review results here so findings and re-review history are durab
 - Record `Base Commit` for the initial review and for each follow-up review entry.
 - `Review Type` must be chosen from the template and must match the actual review lens.
 - Do not use Markdown tables in review evidence. Use headings and flat bullet lists.
+- If a follow-up review keeps `Remaining Risks`, record how each risk is handled. A risk without disposition is incomplete review evidence.
 
 ## Archive Rule
 
