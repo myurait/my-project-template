@@ -72,11 +72,11 @@ main repository には少なくとも次が存在する状態になる。
 
 main repository 側の AI 入口ファイルは、次を参照する前提にする。
 
-1. `development-docs/AI_KNOWLEDGE.md`
-2. `development-docs/INDEX.md`
+1. `development-docs/rules/AI_RUNTIME_RULES.md`
+2. `development-docs/AI_KNOWLEDGE.md`
+3. `README.md`
 
 その上で、両方の repository 内の placeholder を実プロジェクトに合わせて書き換える。
 
 ディレクトリセットアップ後の first action は、
-`development-docs/design/01-project-charter.md` に
-開発言語、文書言語、コミットメッセージ言語を定義すること。
+`development-docs/rules/language-policy.md` にプロジェクトの言語設定を定義すること。

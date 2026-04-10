@@ -72,11 +72,11 @@ The main repository should now contain:
 
 The AI entry files in the main repository should direct agents to:
 
-1. `development-docs/AI_KNOWLEDGE.md`
-2. `development-docs/INDEX.md`
+1. `development-docs/rules/AI_RUNTIME_RULES.md`
+2. `development-docs/AI_KNOWLEDGE.md`
+3. `README.md`
 
 Then rewrite the placeholders in both repositories to match the actual project.
 
-The first action after directory setup is to define the development language,
-documentation language, and commit message language in
-`development-docs/design/01-project-charter.md`.
+The first action after directory setup is to define the project language settings
+in `development-docs/rules/language-policy.md`.
