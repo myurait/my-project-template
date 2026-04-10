@@ -1,15 +1,21 @@
 # Language Policy
 
+This policy applies to all project output including review evidence, development logs, commit messages, and user-facing communication. Compliance is mandatory, not advisory.
+
 ## Project Policy
 
 - Development Language: (define after project setup)
 - Documentation Language: (define after project setup)
 - Code-Internal Language: English
 - Supported Product Languages: (define in development planning or release planning)
+- Canonical Source: This document is the authoritative source for project-specific language decisions and language-domain rules.
 
 ## Purpose
 
 This document defines how language is divided across the project.
+
+This document is also the canonical source for this project's language settings.
+Other project documents should reference this policy instead of redefining the same language values.
 
 Here, "language" includes:
 
@@ -123,6 +129,13 @@ The purpose of this policy is:
 - README documents may also exist in Documentation Language.
 - If both exist, the English README is mandatory and the Documentation Language README is additional.
 
+### Template Documents
+
+- Reusable template documents must be written in English.
+- A document counts as a reusable template when it is intended to be copied, instantiated, or adapted across projects.
+- Template files must avoid project-specific dialogue language assumptions in their own prose.
+- The content generated from a template follows the language rule declared for that output, not the language used to write the template file itself.
+
 ## Writing Rules
 
 ### For Documentation Language
@@ -136,6 +149,7 @@ The purpose of this policy is:
 ### For User-Facing Communication
 
 - User-facing communication follows Documentation Language unless an explicit exception is declared.
+- User-facing messages generated from project templates also follow Documentation Language.
 - Do not assume the user knows internal identifiers, abbreviations, file names, milestone names, or feature IDs.
 - Explain user meaning first, then add internal references only if they improve traceability.
 - Explain not only what will be built, but also why it matters and what experience change it creates.
