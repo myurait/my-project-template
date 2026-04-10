@@ -2,19 +2,22 @@
 
 ## Start Here
 
+Read items 1–5 before starting any work. These are mandatory and must not be skipped.
+
 1. `rules/AI_RUNTIME_RULES.md`
-2. `INDEX.md`
-3. `rules/coding-conventions.md`
-4. `rules/development-process.md`
-5. `knowledge.md`
-6. `design/00-ideal-experience.md`
-7. `requirements/requirement-discovery-rules.md`
-8. `features/00-feature-index.md`
-9. The planning-ready epic and supporting feature docs under `features/`
-10. The structured deferred backlog under `features/01-feature-backlog.md`
-11. The single active roadmap file at the root of `roadmap/`, if one exists
-12. `reference/historical-documents/INDEX.md`
-13. `README.md`
+2. `rules/language-policy.md`
+3. `INDEX.md`
+4. `rules/coding-conventions.md`
+5. `rules/development-process.md`
+6. `knowledge.md`
+7. `design/00-ideal-experience.md`
+8. `requirements/requirement-discovery-rules.md`
+9. `features/00-feature-index.md`
+10. The planning-ready epic and supporting feature docs under `features/`
+11. The structured deferred backlog under `features/01-feature-backlog.md`
+12. The single active roadmap file at the root of `roadmap/`, if one exists
+13. `reference/historical-documents/INDEX.md`
+14. `README.md`
 
 ## Working Rules
 
@@ -23,6 +26,7 @@
 - Record meaningful review evidence in `reviews/`.
 - Keep the active development log in `development-logs/` and archive closed log files under `development-logs/archives/`.
 - Keep at most one active roadmap file at the root of `roadmap/` and archive older roadmap files under `roadmap/archives/`.
+- `rules/language-policy.md` is the canonical source for project-specific language settings and language-domain boundaries.
 - Keep one review thread in one file. Append implementation response plans and follow-up reviews to that file.
 - Keep only the newest 5 review evidence files in `reviews/`; older files belong under `reviews/archives/`.
 - Extract reusable lessons into `knowledge.md`.

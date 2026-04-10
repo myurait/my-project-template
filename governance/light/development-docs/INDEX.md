@@ -6,20 +6,21 @@ This repository contains development-facing project documentation.
 
 1. `AI_KNOWLEDGE.md`
 2. `rules/AI_RUNTIME_RULES.md`
-3. `rules/coding-conventions.md`
-4. `rules/development-process.md`
-5. `knowledge.md`
-6. `design/00-ideal-experience.md`
-7. `requirements/requirement-discovery-rules.md`
-8. `features/00-feature-index.md`
-9. `features/epics/`
-10. `features/supporting/`
-11. `features/01-feature-backlog.md`
-12. The active roadmap file at the root of `roadmap/`, if one exists
-13. `design/01-project-charter.md`
-14. `design/02-architecture.md`
-15. `decisions.md`
-16. `reference/historical-documents/INDEX.md`
+3. `rules/language-policy.md`
+4. `rules/coding-conventions.md`
+5. `rules/development-process.md`
+6. `knowledge.md`
+7. `design/00-ideal-experience.md`
+8. `requirements/requirement-discovery-rules.md`
+9. `features/00-feature-index.md`
+10. `features/epics/`
+11. `features/supporting/`
+12. `features/01-feature-backlog.md`
+13. The active roadmap file at the root of `roadmap/`, if one exists
+14. `design/01-project-charter.md`
+15. `design/02-architecture.md`
+16. `decisions.md`
+17. `reference/historical-documents/INDEX.md`
 
 ## Directory Map
 
@@ -48,6 +49,7 @@ Project Charter (01)
   │
   ├── Rules/
   │     ├── AI Runtime Rules
+  │     ├── Language Policy
   │     ├── Coding Conventions
   │     ├── Development Process
   │     └── Testing Strategy
@@ -76,7 +78,7 @@ Project Charter (01)
 ## First Use
 
 1. Rewrite `design/01-project-charter.md`.
-2. As the first action after directory setup, define the development language, documentation language, and commit message language in `design/01-project-charter.md`.
+2. As the first action after directory setup, define the project language settings in `rules/language-policy.md`.
 3. If no ideal experience input exists, run requirement discovery and create it before planning the roadmap.
 4. Normalize the ideal experience into `design/00-ideal-experience.md` before deriving major planning artifacts.
 5. Archive superseded or imported planning inputs under `reference/historical-documents/` with an index entry.

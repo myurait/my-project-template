@@ -6,12 +6,13 @@ Preserve evidence, explain design intent, and make future change safer.
 
 ## 2. Language Policy
 
-- Git-tracked code, comments, identifiers, test names, and user-facing errors should be in English.
-- Project documentation may be English or Japanese, but the project must choose one default and stay consistent.
-- Private development logs may use the team's working language.
-- The development language, documentation language, and commit message language must be defined in `design/01-project-charter.md` as the first action after directory setup.
-- Specific English targets: inline code comments, JSDoc/TSDoc annotations, README files, API documentation, user-facing error messages in logs.
-- Exceptions follow the language declared in `design/01-project-charter.md`.
+- `rules/language-policy.md` is the authoritative source for project language settings and language-domain boundaries.
+- Follow `rules/language-policy.md` for development language, documentation language, commit message summaries, README language, code-internal language, and product-facing language.
+- For representative code-internal targets, see `rules/language-policy.md`: identifiers, type names, code comments, JSDoc/TSDoc, and API field names.
+- This document only adds coding-specific consequences of that policy:
+  - code-internal naming and comments stay in English
+  - commit messages keep the format `<type>: <summary>`
+  - coding-specific exceptions must follow the exception handling defined in `rules/language-policy.md`
 
 ## 3. Quality Principles
 
@@ -91,7 +92,7 @@ Document public APIs and complex functions with:
 
 - Use a single-line commit message.
 - Use the format `<type>: <summary>`.
-- Write the summary in the language declared for commit messages in `design/01-project-charter.md`.
+- Write the summary in the Documentation Language defined in `rules/language-policy.md`.
 - Keep the summary short and specific.
 - Do not add a commit body unless explicitly required.
 - Do not add `Co-authored-by` trailers unless explicitly instructed.

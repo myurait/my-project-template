@@ -222,6 +222,9 @@ Step 14: Update roadmap and feature state
 **Step 7 — Update public documents**
 - Update design documents if the implementation diverges from them.
 - Update the roadmap with completed items and new discoveries.
+- Roadmap consultation and roadmap share messages are direct user communication, not internal memo format.
+- Use the Documentation Language defined in `rules/language-policy.md`.
+- Explain ideal-experience meaning before internal document names, identifiers, or technical labels.
 - For process, planning, or document-structure changes, record a concise user-facing summary of what changed, why it changed, and what decision or workflow it enables.
 
 **Step 8 — Write a development log entry**
